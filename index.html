@@ -8,7 +8,9 @@
   <!-- Bootstrap core CSS -->
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/addon.css" rel="stylesheet">
     <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,156 +21,60 @@
     <!-- Custom styles for this template -->
 
     <link href="assets/css/carousel.css" rel="stylesheet">
-
-
-  <link rel="stylesheet" href="assets/base.css">
+    <style type="text/css">
+      body { padding-top: 70px; }
+    </style>
 </head>
 <body>
 
-
-<!-- index.html -->
-
-  <script type="text/template" id="item-template">
-    <div class="view">
-      <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-      <label><%- title %></label>
-      <button class="destroy"></button>
-    </div>
-    <input class="edit" value="<%- title %>">
-  </script>
-
-
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consect\
-etur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dap\
-ibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac c\
-ursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
- <!-- Marketing messaging and featurettes================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <script type="text/template" id="marketing-template">
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consect\
-etur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dap\
-ibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac c\
-ursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-      </script>
-
-
-    <script type="text/template" id="footer-template">
-   <!-- Statistics, figures and social buttons================================================== -->
-    <div class="actions">
-        <div class="container">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="row statistics">
-              <div class="col-md-4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>10</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="linediv-c">
-                  <h3>$2,000</h3> <p>of $100,000</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
-                </div>
-              </div>
+<!-- PEPPR PROJECT NAVBAR================================================== -->
+   <div class="navbar-wrapper">
+      <div class="container">
+	
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">the PeppR.oject</a>
             </div>
-          </div>
-          <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="progress">
-              <div class="progress-bar progress-bar-success" style="width: 20%;"></div>
-              <div class="progress-bar progress-bar-warning" style="width: 80%;"></div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#"> Web-app editing mode</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-
-<a class="coinbase-button" data-code="91cb9063fc2afb13d6168e71a152de73" data-button-style="custom_large" href="https://coinbase.com/checkouts/91cb9063fc2afb13d6168e71a152de73">Pay With Bi\tco\
-in</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col-md-8 col-md-offset-2 social">
-     <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-              <a class="addthis_button_preferred_1"></a>
-              <a class="addthis_button_preferred_2"></a>
-              <a class="addthis_button_preferred_3"></a>
-              <a class="addthis_button_preferred_4"></a>
-              <a class="addthis_button_compact"></a>
-              <a class="addthis_counter addthis_bubble_style"></a>
-           </div>
-            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fa7eb21a483054"></script>
-            <!-- AddThis Button END -->
-          </div>
           </div>
         </div>
+
       </div>
-</script>
+    </div>
 
+<!--MAIN CONTAINER========================================================== -->
+<maincontainer>
+<div class="mainContainer" id="mainContainer">
 
+      <div class="row" id="marketingView">
+      </div><!-- /.row -->
+ 
 
-
-
-
+</div> 
+</maincontainer>
+<! -- Main container END -->
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -176,21 +82,20 @@ in</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"
       </footer>
 
 
+<!--USERVOICE BANNER========================================================== -->
+<div id="uvTab" style="background:red url(http://widget.uservoice.com/images/clients/widget2/tab-horizontal-dark.png) 0 50% no-repeat;border:1px solid #FFF;border-bottom:none;-moz-border-radius:4px 4px 0\
+ 0;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;-moz-box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;-webkit-box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px\
+, rgba(0,0,0,.5) 0 1px 2px;box-shadow:inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;font:normal normal bold 14px/1em Arial, sans-serif;position:fixed;right:10px;bottom:0;z-index:9999;\
+background-color:#cc6d00;" class="uv-tab uv-slide-bottom "><a id="uvTabLabel" style="background-color: transparent; display:block;padding:6px 10px 2px 42px;text-decoration:none;" href="javascript:return \
+false;"><img src="http://widget.uservoice.com/dcache/widget/feedback-tab.png?t=Feedback%20%26%20Support&amp;c=ffffff&amp;r=0" alt="Feedback &amp; Support" style="border:0; background-color: transparent; \
+padding:0; margin:0;"></a></div>
 
 
- <script type="text/template" id="marketing-template"></script>
-  <script type="text/template" id="footer-template"></script>
+
+
   <script src="lib/jquery.min.js"></script>
-  <script src="lib/underscore.js"></script>
-  <script src="lib/backbone.js"></script>
-  <script src="lib/backbone.localStorage.js"></script>
-  <script src="js/models/todo.js"></script>
-  <script src="js/collections/todos.js"></script>
-  <script src="js/views/todos.js"></script>
-  <script src="js/views/app.js"></script>
+  <script data-main="js/main" src="lib/require/require.js"></script>
   <script src="js/routers/router.js"></script>
-  <script src="js/app.js"></script>
-
   <script src="lib/bootstrap.min.js"></script>
   <script src="lib/holder.js"></script>
 

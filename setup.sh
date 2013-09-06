@@ -2,8 +2,9 @@
 # Install node packages
 npm install
 
-#Install supervisor
+#Install supervisor&inspector
 npm install supervisor -g
+npm install -g node-inspector
 
 # Set up heroku configuration variables
 # https://devcenter.heroku.com/articles/config-vars
